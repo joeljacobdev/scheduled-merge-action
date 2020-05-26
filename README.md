@@ -2,6 +2,7 @@
 
 > GitHub Action to merge pull requests on a scheduled day
 
+Based on [merge-schedule-action](https://github.com/gr2m/merge-schedule-action)
 ## Usage
 
 Create `.github/workflows/merge-schedule.yml`
