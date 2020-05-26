@@ -1,13 +1,13 @@
 {
-  "name": "merge-schedule-action",
+  "name": "scheduled-merge-action",
   "private": true,
   "version": "0.0.0-development",
   "description": "GitHub Action to merge pull requests on a scheduled day",
-  "repository": "https://github.com/gr2m/merge-schedule-action.git",
+  "repository": "https://github.com/joeljacobdev/scheduled-merge-action.git",
   "keywords": [
     "github-action"
   ],
-  "author": "Gregor Martynus (https://twitter.com/gr2m)",
+  "author": "Joel Jacob",
   "license": "ISC",
   "scripts": {
     "build": "ncc build index.js -o dist"

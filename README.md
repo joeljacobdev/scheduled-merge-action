@@ -1,4 +1,4 @@
-# merge-schedule-action
+# scheduled-merge-action
 
 > GitHub Action to merge pull requests on a scheduled day
 
@@ -21,7 +21,7 @@ jobs:
   merge_schedule:
     runs-on: ubuntu-latest
     steps:
-      - uses: gr2m/merge-schedule-action@v1.x
+      - uses: joeljacobdev/scheduled-merge-action
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
