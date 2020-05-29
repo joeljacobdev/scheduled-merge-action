@@ -1,0 +1,16 @@
+name: Scheduled Merge
+on:
+  schedule:
+    # every day at 00:00
+    - cron: '0 0 * * *'
+
+jobs:
+  merge_schedule:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - run: "npm ci"
+      - run: "npm run build"
+      - uses: ./
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
