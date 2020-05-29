@@ -2,7 +2,7 @@
 
 > GitHub Action to merge pull requests on a scheduled day
 
-Based on [merge-schedule-action](https://github.com/gr2m/merge-schedule-action)
+Changes done on orignal action to suite my need [merge-schedule-action](https://github.com/gr2m/merge-schedule-action)
 ## Usage
 
 Create `.github/workflows/merge-schedule.yml`
@@ -34,10 +34,14 @@ In your pull requests, add a line to the end of the pull request description loo
 ```
 
 To control at which time of the day you want the pull request to be merged, I recommend to adapt the `- cron: ...` setting in the workflow file.
+Template of workflow given in `.github/workflows/scheduled-merge.template`
 
-The action sets a pending commit status if the pull request was recognized as being scheduled.
-
-Note that pull requests from forks are ignored for security reasons.
+Template from workflow
+Additional features
+ - exclude draft PR
+ - TODO: exclude PR based on label
+ - TODO: option to rebase before merge
+ - TODO: option to squash before merge
 
 ## License
 
