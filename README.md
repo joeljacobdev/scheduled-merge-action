@@ -39,7 +39,7 @@ Template of workflow given in `.github/workflows/scheduled-merge.template`
 Template from workflow
 Additional features
  - exclude draft PR
- - TODO: exclude PR based on label
+ - merge only PR based on label, if LABELS environment defined
  - TODO: option to rebase before merge
  - TODO: option to squash before merge
 
